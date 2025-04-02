@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WAY — Value Projects</title>
+  <style>
+    body { font-family: sans-serif; background: #111; color: #eee; text-align: center; padding: 2em; }
+    img.logo { width: 160px; margin-bottom: 1em; }
+    h1 { font-size: 2em; }
+    .lang-switch { margin-top: 2em; }
+    button { margin: 0 10px; padding: 0.5em 1em; font-size: 1em; cursor: pointer; }
+  </style>
+  <script>
+    function setLang(lang) {
+      const texts = {
+        en: "WAY is a fusion of craftsmanship, intelligence, and generational memory.",
+        ru: "WAY — это слияние мастерства, интеллекта и памяти поколений.",
+        de: "WAY ist eine Verschmelzung von Handwerk, Intelligenz und dem Gedächtnis der Generationen."
+      };
+      document.getElementById("main-text").innerText = texts[lang];
+    }
+  </script>
+</head>
+<body>
+  <img src="assets/logo.png" alt="WAY Logo" class="logo"/>
+  <h1 id="main-text">
+    WAY is a fusion of craftsmanship, intelligence, and generational memory.
+  </h1>
+  <div class="lang-switch">
+    <button onclick="setLang('en')">English</button>
+    <button onclick="setLang('ru')">Русский</button>
+    <button onclick="setLang('de')">Deutsch</button>
+  </div>
+</body>
+</html>
