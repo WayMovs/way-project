@@ -34,7 +34,8 @@ CODEX_USAGE.md
 data/core_names.csv
 data/historical_female_seed_1987.csv
 data/historical_male_seed_1987.csv
-data/variant_relations.csv
+data/variant_relations_part1.csv
+data/variant_relations_part2.csv
 data/negative_pairs.csv
 data/review_queue.csv
 src/normalize-name.ts
@@ -50,4 +51,4 @@ manifest.json
 
 ## Инструкция Codex
 
-Использовать точное совпадение первым. Затем применять только безопасную техническую нормализацию. Явные отношения из `variant_relations.csv` показывать как объяснимые кандидаты. Нечёткое совпадение не является фактом. Политика для каждого результата: `NEVER_AUTOMATIC_PERSON_MERGE`.
+Использовать точное совпадение первым. Затем применять только безопасную техническую нормализацию. Явные отношения из двух файлов `variant_relations_part*.csv` показывать как объяснимые кандидаты. Нечёткое совпадение не является фактом. Политика для каждого результата: `NEVER_AUTOMATIC_PERSON_MERGE`.
