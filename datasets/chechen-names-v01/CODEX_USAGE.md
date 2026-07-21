@@ -9,11 +9,11 @@ Codex может читать этот пакет и предлагать изм
 3. `rules/normalization.md`
 4. `rules/multilingual-writing.md`
 5. `data/core_names.csv`
-6. `data/variant_relations.csv`
+6. `data/variant_relations_part1.csv` + `data/variant_relations_part2.csv`
 7. `data/negative_pairs.csv`
 8. `data/review_queue.csv`
 
-`WAY_CHECHEN_NAMES_CODEX_BUNDLE_V01.md` содержит весь компактный корпус в одном файле. Исторические CSV — свидетельства из источника 1987 года, а не автоматически действующая современная норма.
+Исторические CSV — свидетельства из источника 1987 года, а не автоматически действующая современная норма.
 
 ## Обязательное поведение
 
