@@ -1,0 +1,35 @@
+name: temp-piper-model-fetch
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  fetch-model:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download Russian male Piper voice
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p model
+          curl -L --fail --retry 5 --retry-all-errors \
+            -o model/ru_RU-dmitri-medium.onnx \
+            'https://huggingface.co/rhasspy/piper-voices/resolve/v1.0.0/ru/ru_RU/dmitri/medium/ru_RU-dmitri-medium.onnx'
+          curl -L --fail --retry 5 --retry-all-errors \
+            -o model/ru_RU-dmitri-medium.onnx.json \
+            'https://huggingface.co/rhasspy/piper-voices/resolve/v1.0.0/ru/ru_RU/dmitri/medium/ru_RU-dmitri-medium.onnx.json'
+          test "$(stat -c%s model/ru_RU-dmitri-medium.onnx)" -gt 60000000
+          sha256sum model/* | tee model/SHA256SUMS.txt
+      - name: Upload voice package
+        uses: actions/upload-artifact@v4
+        with:
+          name: russian-piper-dmitri
+          path: model/
+          retention-days: 1
+          if-no-files-found: error
