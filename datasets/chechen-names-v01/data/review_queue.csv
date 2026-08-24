@@ -1,0 +1,11 @@
+id,priority,scope,required_roles,question
+review-001,BLOCKING_FOR_CANONICAL_RELEASE,all core recommendedDisplay.ce,CHECHEN_LANGUAGE_REVIEWER|DATA_STEWARD,Does the proposed current Chechen display comply with the 2020 orthographic rules and contemporary personal-name usage?
+review-002,HIGH,data/historical_female_seed_1987.json,HISTORICAL_SOURCE_REVIEWER|CHECHEN_LANGUAGE_REVIEWER,Compare every OCR-derived pair against page images; preserve the 1987 source form and add a separately reviewed modern form.
+review-003,HIGH,data/historical_male_seed_1987.json,HISTORICAL_SOURCE_REVIEWER|CHECHEN_LANGUAGE_REVIEWER,Compare every OCR-derived pair against page images and resolve broken columns.
+review-004,HIGH,Arabic forms,ARABIC_LANGUAGE_REVIEWER|CHECHEN_LANGUAGE_REVIEWER,"Classify each Arabic string as source form, etymon, conventional cognate, generated transliteration or ambiguity."
+review-005,HIGH,Turkish forms,TURKISH_LANGUAGE_REVIEWER|CHECHEN_LANGUAGE_REVIEWER,Verify conventional Turkish cognates and ensure they are never labeled exact legal aliases.
+review-006,MEDIUM,Latin display forms,CHECHEN_LANGUAGE_REVIEWER|DATA_STEWARD,Choose and version a reversible Chechen Latin scheme for linguistic display; keep passport spellings separate.
+review-007,MEDIUM,ce-name-aminat and ce-name-malika Arabic forms,ARABIC_LANGUAGE_REVIEWER,Resolve multiple plausible Arabic spellings/etymons without automatic selection.
+review-008,MEDIUM,ce-name-fariza,ARABIC_LANGUAGE_REVIEWER|PERSIAN_LANGUAGE_REVIEWER,Determine source language and reviewed Arabic/Persian spelling; V01 intentionally leaves Arabic blank.
+review-009,MEDIUM,relation clusters: Петимат/Фатима; Магомед/Мухаммад; Айшат/Айша,CHECHEN_LANGUAGE_REVIEWER|HISTORICAL_SOURCE_REVIEWER,Confirm relation type and UI wording while preserving legal-name distinctions.
+review-010,BLOCKING_FOR_PUBLIC_CLAIM_OF_COMPLETENESS,dataset completeness,DATA_STEWARD|CULTURAL_ADVISORY_GROUP,Define measurable coverage; do not use the phrase 'all Chechen names' without a published methodology.

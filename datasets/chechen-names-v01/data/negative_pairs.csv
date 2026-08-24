@@ -1,0 +1,35 @@
+id,left,right,expected_matcher_decision,may_suggest_name_relation,reason
+neg-001,Аза,Ази,NO_PERSON_AUTO_MERGE,True,Different source-listed forms; fuzzy distance must not merge.
+neg-002,Айза,Айзан,NO_PERSON_AUTO_MERGE,True,Prefix similarity is not equivalence.
+neg-003,Мадина,Мадинат,NO_PERSON_AUTO_MERGE,True,Both are separately listed.
+neg-004,Селима,Селимат,NO_PERSON_AUTO_MERGE,True,Both are separately listed.
+neg-005,Заидат,Зайдат,NO_PERSON_AUTO_MERGE,True,"Potentially related, but source lists separately; review only."
+neg-006,Язара,Язура,NO_PERSON_AUTO_MERGE,True,One-vowel difference is meaningful until reviewed.
+neg-007,Элиса,Элита,NO_PERSON_AUTO_MERGE,True,Distinct source-listed names.
+neg-008,Рахимат,Ребиат,NO_PERSON_AUTO_MERGE,True,Do not use edit distance alone.
+neg-009,Хелипат,Хелисат,NO_PERSON_AUTO_MERGE,True,Distinct source-listed names.
+neg-010,Маржан,Марзет,NO_PERSON_AUTO_MERGE,True,Distinct source-listed names.
+neg-011,Зелимат,Келимат,NO_PERSON_AUTO_MERGE,True,Distinct source-listed names.
+neg-012,Муминат,Умисат,NO_PERSON_AUTO_MERGE,True,Distinct source-listed names.
+neg-013,Шамсет,Шумисат,NO_PERSON_AUTO_MERGE,True,Distinct source-listed names.
+neg-014,Аминат,Аманат,NO_PERSON_AUTO_MERGE,True,Similar spelling does not prove equivalence.
+neg-015,Лайла,Лимана,NO_PERSON_AUTO_MERGE,True,Do not merge by shared prefix.
+neg-016,Заур,Зураб,NO_PERSON_AUTO_MERGE,True,Distinct names.
+neg-017,Ваха,Вахийта,NO_PERSON_AUTO_MERGE,True,Semantically related imperatives but distinct name forms.
+neg-018,Виса,Висар,NO_PERSON_AUTO_MERGE,True,Distinct source-listed forms.
+neg-019,Виса,Висита,NO_PERSON_AUTO_MERGE,True,Distinct source-listed forms.
+neg-020,Бека,Бексолта,NO_PERSON_AUTO_MERGE,True,Shared element does not mean same name.
+neg-021,Мовла,Мовсар,NO_PERSON_AUTO_MERGE,True,Distinct source-listed forms.
+neg-022,Магомед,Махмут,NO_PERSON_AUTO_MERGE,True,Distinct Arabic-origin name families.
+neg-023,Саид,Сайдулла,NO_PERSON_AUTO_MERGE,True,Simple and compound names are not the same.
+neg-024,Хасан,Хасанбек,NO_PERSON_AUTO_MERGE,True,Simple and compound names are not the same.
+neg-025,Сулейман,Султан,NO_PERSON_AUTO_MERGE,True,Distinct names.
+neg-026,Юнус,Юсуп,NO_PERSON_AUTO_MERGE,True,Distinct names.
+neg-027,Иса,Исхак,NO_PERSON_AUTO_MERGE,True,Distinct names.
+neg-028,Исмаил,Исраил,NO_PERSON_AUTO_MERGE,True,Distinct names.
+neg-029,Рамазан,Рашид,NO_PERSON_AUTO_MERGE,True,Distinct names.
+neg-030,Анзор,Арсамак,NO_PERSON_AUTO_MERGE,True,Distinct names.
+neg-031,Петимат,Фатима,NO_PERSON_AUTO_MERGE,True,"Related historically, but never an exact legal-name match."
+neg-032,Магомед,Мухаммад,NO_PERSON_AUTO_MERGE,True,Related name family; require user/document confirmation.
+neg-033,Марем,Марьям,NO_PERSON_AUTO_MERGE,True,"Cross-language forms may relate, but do not merge person records."
+neg-034,Айшат,Айша,NO_PERSON_AUTO_MERGE,True,Related forms; do not replace the entered legal form.

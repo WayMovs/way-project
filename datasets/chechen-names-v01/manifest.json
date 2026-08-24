@@ -1,0 +1,103 @@
+{
+  "packageId": "WAY-CHECHEN-NAMES-GITHUB-V01",
+  "datasetVersion": "WAY-CHECHEN-NAMES-V01",
+  "createdAt": "2026-07-21",
+  "status": "RESEARCH_HUMAN_REVIEW_REQUIRED",
+  "languages": [
+    "ce",
+    "ru",
+    "en",
+    "de",
+    "tr",
+    "ar"
+  ],
+  "scripts": [
+    "Cyrl",
+    "Latn",
+    "Arab"
+  ],
+  "counts": {
+    "coreNameConcepts": 98,
+    "femaleConcepts": 53,
+    "maleConcepts": 45,
+    "forms": 703,
+    "historicalFemalePairs": 181,
+    "historicalMalePairs": 208,
+    "variantRelations": 143,
+    "negativePairs": 34,
+    "reviewQueueItems": 10
+  },
+  "safety": {
+    "personAutoMergeByName": false,
+    "legalNameOverwrite": false,
+    "ethnicityInferenceFromName": false,
+    "genealogyInferenceFromName": false
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 4087,
+      "sha256": "64689a2107a570eb45fc5b6daaba32fca33e071f59e8875f00cb59997c58cdf4"
+    },
+    {
+      "path": "CODEX_USAGE.md",
+      "bytes": 3737,
+      "sha256": "2b8ade4b6938146c63df9e30fc4c505bbddd9da44e68a43b8b7ba4bc350106d2"
+    },
+    {
+      "path": "data/core_names.csv",
+      "bytes": 11542,
+      "sha256": "8d593775e0efa665388f562cc18e4eb1d6255c7bbff2697190d41f959c7aa0a9"
+    },
+    {
+      "path": "data/historical_female_seed_1987.csv",
+      "bytes": 17237,
+      "sha256": "5441a8ce4e1621b5ddd81aaa6e19644ae777f6ed4279b7ea93ef7f231b74b969"
+    },
+    {
+      "path": "data/historical_male_seed_1987.csv",
+      "bytes": 19149,
+      "sha256": "6e80ac470dd584c9f724eb9083eaa18d808c75dfc6348b440908800dbaeeeb89"
+    },
+    {
+      "path": "data/variant_relations_part1.csv",
+      "bytes": 13272,
+      "sha256": "236de563a80a9364515476ef7b6853065c6c569d806b4d0e821cf12b15edfcff"
+    },
+    {
+      "path": "data/variant_relations_part2.csv",
+      "bytes": 11688,
+      "sha256": "99dae3e83ac17b27549f2895f7ed3846e6ea59e80d776879c72f33624165f6f0"
+    },
+    {
+      "path": "data/negative_pairs.csv",
+      "bytes": 3336,
+      "sha256": "dcb91aaa7bc15fc147541afe0b41e6ef60d2d6552cfd446016c381b309a32420"
+    },
+    {
+      "path": "data/review_queue.csv",
+      "bytes": 2082,
+      "sha256": "5cdf12bdbf1fcb67543bd477d4a0b0f5522714e2e1f4198bac47b312172625a4"
+    },
+    {
+      "path": "src/normalize-name.ts",
+      "bytes": 3254,
+      "sha256": "764b2c49d4800886ef6fa3772b7eb3969946672e3cb45904ab4e96373417efc3"
+    },
+    {
+      "path": "rules/normalization.md",
+      "bytes": 3036,
+      "sha256": "7ef0bd04032bbc1553d00947e969a1c523320a463f2e7b540f0605a25ada5595"
+    },
+    {
+      "path": "rules/multilingual-writing.md",
+      "bytes": 3086,
+      "sha256": "3e0e418057daa65271d69492026283b2c842dd744bf345fd5afd3b33f2a4bb30"
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "bytes": 4710,
+      "sha256": "04af670ee1fd348e936ee7cd062dc0c5139849a3c2a5c169993831bfaa3976a4"
+    }
+  ]
+}
